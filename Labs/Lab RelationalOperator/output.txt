@@ -1,0 +1,17 @@
+> relop GT
+>= relop GE
+<> relop NE
+= relop EQ
+< relop LT
+<> relop NE
+< relop LT
+<= relop LE
+= relop EQ
+= relop EQ
+<> relop NE
+> relop GT
+<> relop NE
+= relop EQ
+= relop EQ
+<= relop LE
+>= relop GE

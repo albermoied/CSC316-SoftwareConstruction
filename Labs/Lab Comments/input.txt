@@ -1,0 +1,15 @@
+
+/*  these 
+
+are my
+
+ comments
+
+*/
+
+if ( x == 1 )
+{
+	temp = 6 * 5 ; 		/* Multiplying and Storing into "temp" */
+} 
+
+
