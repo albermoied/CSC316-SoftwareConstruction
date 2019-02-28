@@ -152,25 +152,25 @@ void Tokenizer::adjustStartLex(void)
 }
 int main()
 {
-     ofstream myfile("output.txt");
-     char* token;
-     token = new char[20];
-     Tokenizer myTokenizer;
-     //myTokenizer.readInputFile("Input.txt");
-     myTokenizer.initialize("Input.txt");
-     myTokenizer.getNextToken();
-     myTokenizer.getNextToken(token);
-     while(token[0]!=0)
-     {
-               myfile.write((char*)token, strlen(token));
-               if(!myfile)
-               cout<<"Write failed"<<endl;
-               myfile.write("\n",1);
-               if(!myfile)
-               cout<<"Write failed"<<endl;
-               myTokenizer.getNextToken(token);
-                   }*/
-                   myfile.close();
-                   getch();
-                   return 0;
+    ofstream myfile("output.txt");
+    char* token;
+    token = new char[20];
+    Tokenizer myTokenizer;
+    //myTokenizer.readInputFile("Input.txt");
+    myTokenizer.initialize("Input.txt");
+    myTokenizer.getNextToken();
+    myTokenizer.getNextToken(token);
+    while(token[0]!=0)
+    {
+        myfile.write((char*)token, strlen(token));
+        if(!myfile)
+        cout<<"Write failed"<<endl;
+        myfile.write("\n",1);
+        if(!myfile)
+        cout<<"Write failed"<<endl;
+        myTokenizer.getNextToken(token);
+    }
+    myfile.close();
+    getch();
+    return 0;
 }
